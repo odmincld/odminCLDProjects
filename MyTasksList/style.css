@@ -1,0 +1,138 @@
+div {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  display: flex;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(128, 115, 115);
+  align-items: center;
+}
+.container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  justify-items: center;
+  align-items: center;
+}
+#search-btn {
+  border-radius: 50%;
+  border: 0;
+  background-color: transparent;
+  font-size: 34px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+#search-btn:active {
+  transform: translate(1px, 1px);
+}
+.input-button {
+  flex-direction: row;
+  width: 100%;
+}
+#new-task-input {
+  padding: 5px 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 22px;
+  background-color: rgba(184, 212, 214, 0.74);
+  margin-bottom: 10px;
+}
+#new-task-input:focus {
+  outline: none;
+}
+#new-task-btn {
+  font-size: 24px;
+  border-radius: 8px;
+  min-width: fit-content;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: antiquewhite;
+}
+#search-input {
+  display: none;
+  padding: 5px 8px;
+  width: 97%;
+  border-radius: 8px;
+  border: 2px solid black;
+  font-size: 20px;
+  background-color: rgba(167, 177, 219, 0.74);
+  margin-bottom: 10px;
+}
+#search-input:focus {
+  outline: none;
+}
+.task-list {
+  width: 100%;
+}
+.task {
+  padding: 5px 8px;
+  border: 2px solid black;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-bottom: 2px;
+  border-radius: 6px;
+  background-color: rgba(144, 155, 120, 0.767);
+  align-items: center;
+}
+.div-btn {
+  flex-direction: row;
+}
+.list-btn {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+.task-btn {
+  background-color: rgba(89, 218, 95, 0.705);
+}
+.delete-btn {
+  background-color: rgba(240, 10, 10, 0.486);
+}
+.task-done {
+  text-decoration: line-through;
+}
+.task-btn.active {
+  background-color: rgb(196, 172, 66); /* или любой другой */
+}
+#empty-message {
+  width: 99%;
+  font-size: 20px;
+}
+.edit-input:focus {
+  border-radius: 8px;
+  background-color: rgba(112, 121, 94, 0.863);
+  font-size: 20px;
+  outline: none;
+}
+@media (max-width: 720px) {
+  .list-btn {
+    min-width: 45px;
+    min-height: 45px;
+  }
+  .task {
+    font-size: 18px;
+  }
+  #new-task-input {
+    font-size: 19px;
+  }
+}
