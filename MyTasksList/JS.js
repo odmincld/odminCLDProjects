@@ -218,3 +218,19 @@ function loadTasksFromLocalStorage() {
 const storedTasks = loadTasksFromLocalStorage();
 
 renderTaskList(storedTasks);
+
+//MOEEE
+const INIT_KEY = "isInitialized";
+const isInitialized = localStorage.getItem(INIT_KEY);
+if (!isInitialized) {
+  renderTaskList([
+    { title: "Нюхать бебру", completed: false },
+    { title: "Поесть борща", completed: false },
+    { title: "Покакать", completed: false },
+  ]);
+  saveTasksToLocalStorage();
+  localStorage.setItem(INIT_KEY, "true");
+} else {
+  const storedTasks = loadTasksFromLocalStorage();
+  renderTaskList(storedTasks);
+}
