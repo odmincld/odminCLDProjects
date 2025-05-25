@@ -218,4 +218,3 @@ function loadTasksFromLocalStorage() {
 const storedTasks = loadTasksFromLocalStorage();
 
 renderTaskList(storedTasks);
-
